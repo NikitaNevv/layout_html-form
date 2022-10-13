@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
@@ -16,9 +17,9 @@
     >
       <fieldset class="fieldset">
         <legend>
-          Pesonal information
+          Personal information
         </legend>
-        <div class="form">
+        <div class="form1">
           <label for="surname">
             Surname:
           </label>
@@ -69,7 +70,7 @@
           >
         </div>
 
-        <div class="form">
+        <div class="form1">
           <label for="policyAgr">
           I accept the term of the agreement
           </label>
@@ -86,9 +87,9 @@
           Registration
         </legend>
 
-        <div class="form">
+        <div class="margin-bottom">
           <label for="mail">
-            E-mail
+            E-mail:
           </label>
           <input
             type="email"
@@ -99,9 +100,9 @@
           >
         </div>
 
-        <div class="form">
+        <div>
           <label for="pass">
-            Password
+            Password:
           </label>
           <input
             type="password"
@@ -120,7 +121,7 @@
           An interesting fact about you!
         </legend>
 
-        <div class="form">
+        <div>
           Do you love cats?
           <input
             type="radio"
@@ -160,6 +161,7 @@
             id="goToBed"
             name="TimeGoToBed"
             autocomplete="off"
+            step="2"
           >
         </div>
 
@@ -168,13 +170,13 @@
             What are your favorite brand of cars?
             <select name="FavCarBrands" multiple>
               <option value="BMW">BMW</option>
-              <option value="Audio">Audio</option>
+              <option value="Audio">Audi</option>
               <option value="Lada">Lada</option>
             </select>
           </label>
         </div>
 
-        <div class="form">
+        <div class="form1">
           <label for="rating">
             How do you rate our work?
           </label>
@@ -184,29 +186,36 @@
             name="rateWork"
             min="1"
             max="10"
+            value="1"
             autocomplete="off"
           >
         </div>
       </fieldset>
 
-      <fieldset class="fieldset">
-        <div class="form">
-          <label for="comm">Comments:</label>
+      <fieldset  class="fieldset">
+        <legend>
+          Additional info:
+        </legend>
+        <div class="margin-bottom">
+          <label for="comm">
+            Comments:
+          </label>
           <textarea
             name="comments"
             id="comm"
             autocomplete="off"
-            ></textarea>
+            >
+          </textarea>
         </div>
 
-        <div class="form">
-          <label for="reccomend">Would you reccomend us?</label>
+        <div>
+          <label for="reccomend">Would you recommend us?</label>
           <select
             name="reccomendUs"
             id="reccomend"
             autocomplete="off">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </div>
       </fieldset>
